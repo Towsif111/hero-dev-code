@@ -12,6 +12,13 @@
     text-align: center;
 }
 
+.text-center .btn {
+    display: inline-flex;  /* Keeps it as a button size but allows flex centering */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;        /* Safety centering */
+}
+
 header{
     background-color: #FFF8F3;
     padding-top: 50px;
@@ -136,6 +143,11 @@ nav .menu a{
     padding-top: 130px;
 }
 
+#about .section-heading {
+    margin: 0 auto 50px; /* 'auto' on left/right centers it */
+    max-width: 827px;     /* Keeps the text from getting too wide */
+}
+
 #about .about-container{
     width: 100%;
     max-width: 1140px;
@@ -172,6 +184,11 @@ nav .menu a{
     max-width: 1140px;
     margin: 0 auto;
 
+}
+
+#skills .section-heading {
+    margin: 0 auto 50px; /* 'auto' centers the block, 50px adds space below it */
+    text-align: center;
 }
 
 #skills .skills-container .skill-box{
@@ -213,6 +230,12 @@ nav .menu a{
     display: flex;
     gap: 25px;
 
+}
+
+#resume .section-heading {
+    margin: 0 auto;        /* Centers the block on the page */
+    text-align: center;    /* Centers the text inside the block */
+    max-width: 827px;      /* Matches your other section headings */
 }
 
 .resume-container hr{
